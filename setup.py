@@ -16,9 +16,9 @@ setup(name='ploneconf2014.theme',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='plone theme cantv demo',
-      author='Marco Da Silva',
-      author_email='markmarco16@hotmail.com',
-      url='https://github.com/markmarco16/ploneconf2014.theme/',
+      author='Yani M',
+      author_email='yaninamuradas@gmail.com',
+      url='https://github.com/Yani18/ploneconf2014.theme/',
       license='GPL version 2',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['ploneconf2014'],
@@ -38,4 +38,8 @@ setup(name='ploneconf2014.theme',
       [z3c.autoinclude.plugin]
       target = plone
       """,
+
+      setup_requires=["PasteScript"],
+      paster_plugins=["ZopeSkel"],
+
       )
